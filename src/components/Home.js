@@ -15,7 +15,7 @@ export default function Home() {
     e.preventDefault();
     try {
         let res = await fetch(
-           `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${apiKey}&units=imperial`
+           `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`
          );
           let data = await res.json()
           setWeatherData(data);
