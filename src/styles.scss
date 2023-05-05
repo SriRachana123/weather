@@ -7,6 +7,10 @@ $container_bg: url('https://images.unsplash.com/photo-1566352207769-3a591a2c9567
   background-image: $container_bg;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  background-size: cover;
 }
 
 .weather-report {

@@ -29,15 +29,15 @@ export default function Home() {
      };
  
   return (
-    <>
+    <div className="flex flex-col items-center min-h-full p-4 rounded-lg weather-container">
     <form onSubmit ={getData}>
-      <input
+      <input className="w-full p-2 text-sm rounded-lg"
         type="text"
         placeholder="Enter your city"
         onChange={handleChange}
       />
      </form>
      {flag &&<WeatherOutput weatherData={weatherData}location = {location}/>}
-    </>
+    </div>
   );
 }
